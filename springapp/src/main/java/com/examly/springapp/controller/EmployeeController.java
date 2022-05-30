@@ -79,5 +79,10 @@ public class EmployeeController {
         System.out.println("hi i am customer put");
         return employeeService.updateCustomer(id,customerModel);
     }
+    @PutMapping("/editCustomer/{id}")
+    public CustomerModel verifyLogin(@PathVariable String id, @RequestBody CustomerModel customerModel){
+        System.out.println("hi i am customer put");
+        return employeeService.updateCustomer(id,customerModel);
+    }
   
 }
