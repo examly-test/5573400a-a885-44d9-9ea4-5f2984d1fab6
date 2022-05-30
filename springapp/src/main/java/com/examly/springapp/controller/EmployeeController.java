@@ -68,10 +68,16 @@ public class EmployeeController {
         System.out.println("hi i am employee by delete id");
         employeeService.deleteEmployeeById(id);
     }
+    @DeleteMapping("/admin/deleteEmployee")
+    public void deleteEmployeeById(@RequestParam String id ){
+        System.out.println("hi i am employee by delete id");
+        employeeService.deleteEmployeeById(id);
+    }
 
     @PutMapping("/editCustomer/{id}")
     public CustomerModel verifyLogin(@PathVariable String id, @RequestBody CustomerModel customerModel){
         System.out.println("hi i am customer put");
         return employeeService.updateCustomer(id,customerModel);
     }
+   
 }
