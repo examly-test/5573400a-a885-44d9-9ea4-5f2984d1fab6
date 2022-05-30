@@ -65,10 +65,5 @@ public class LoginController {
         System.out.println("hi i am edit route");
         return employeeService.editRoutes(id, routeModel);
     }
-    @PutMapping("/admin/editRoutes")
-    public RouteModel editRoutes(@RequestParam(value="routeId", required = false) String id, @RequestBody RouteModel routeModel){
-        System.out.println("hi i am edit route");
-        return employeeService.editRoutes(id, routeModel);
-    }
 
 }
